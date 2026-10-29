@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curiosidades de la Gravedad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER CON ICONO Y CARRUSEL DE ENLACES -->
+    <header class="header-carrusel">
+      <div class="header-contenido">
+        <!-- Reemplaza 'tu-icono.png' por la ruta de tu imagen de icono -->
+        <img
+          src="./assets/manzanita.png"
+          alt="Icono Gravedad"
+          class="header-icono"
+        />
+
+        <nav class="carrusel-nav">
+          <ul class="carrusel-lista">
+            <li><a href="#definicion-de-gravedad">Definición</a></li>
+            <li><a href="#la-masa">La masa</a></li>
+            <li><a href="#el-peso">El peso</a></li>
+            <li><a href="#masa-y-peso">No confundir</a></li>
+            <li><a href="#newton-y-la-gravedad">Newton</a></li>
+            <li><a href="#la-gravedad-de-los-planetas">Planetas</a></li>
+            <li>
+              <a href="#tenelo-en-cuenta-si-caminas-en-baja-gravedad"
+                >Baja gravedad</a
+              >
+            </li>
+            <li><a href="#einstein-y-la-gravedad">Einstein</a></li>
+            <li><a href="#demuestra-tus-conocimientos">Cuestionario</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SECCIÓN HERO: TEXTO ARRIBA Y VIDEO ABAJO -->
+    <section class="hero-section">
+      <div class="hero-texto">
+        <h1>Curiosidades de la gravedad</h1>
+        <p>
+          Veremos qué es la gravedad, cómo se mide y otras curiosidades. ¡Ah! Y
+          podrás poner tus conocimientos a prueba.
+        </p>
+      </div>
+
+      <div class="hero-video">
+        <video autoplay muted loop playsinline poster="imagen-de-portada.jpg">
+          <source src="./assets/newtonmanzana.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+
+    <main class="galeria-grid">
+      <!-- 1. Definición -->
+      <section id="definicion-de-gravedad" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-1" class="check-tarjeta" />
+        <label for="galeria-1" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1015/400/300"
+              alt="Definición de gravedad"
+            />
+            <h2>Definición de gravedad</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>Definición de gravedad</h2>
+            <p>
+              La gravedad es la fuerza de atracción entre los objetos que tienen
+              masa. Cuanta más masa tiene un objeto, mayor es su fuerza de
+              atracción gravitatoria. Es por esto que no notamos que las cosas a nuestro alrededor se atraigan entre si como si de imanes se tratara pero si lo notamos, por ejemplo, al soltar un objeto y ver como cae.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 2. La masa -->
+      <section id="la-masa" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-2" class="check-tarjeta" />
+        <label for="galeria-2" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img src="https://picsum.photos/id/1025/400/300" alt="La masa" />
+            <h2>La masa</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>La masa</h2>
+            <p>
+              La masa es la cantidad de materia que contiene un cuerpo. Por decirlo de alguna manera, expresa la cantidad de átomos que forman las cosas. No
+              cambia sin importar en qué planeta o lugar del universo te
+              encuentres. Tambien está relacionada con la inercia, el esfuerzo necesario para poner algo en movimiento o frenarlo.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 3. El peso -->
+      <section id="el-peso" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-3" class="check-tarjeta" />
+        <label for="galeria-3" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img src="https://picsum.photos/id/1069/400/300" alt="El peso" />
+            <h2>El peso</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>El peso</h2>
+            <p>
+              El peso es la fuerza que experimenta todo objeto hacia abajo por estar afectado por la gravedad. A diferencia de la masa, tu peso cambia según
+              el planeta donde estés.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 4. No confundas masa y peso -->
+      <section id="masa-y-peso" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-4" class="check-tarjeta" />
+        <label for="galeria-4" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1062/400/300"
+              alt="No confundas masa y peso"
+            />
+            <h2>No confundas masa y peso</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>No confundas masa y peso</h2>
+            <p>
+              En nuestra vida cotidiana no hablamos cientificamente correcto. Por eso decimos cosas como "esto pesa 100 kilos". En realidad la masa se expresa en kilogramos y el peso en Newton. En realidad deberíamos decir "voy a masearme en esta balanza" o en la panadería decir "Señorita ¿me masearia un kilogramo de pan y nos bizcochitos?"
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+
+      <!-- 5. Newton y la gravedad -->
+      <section id="newton-y-la-gravedad" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-4" class="check-tarjeta" />
+        <label for="galeria-4" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1062/400/300"
+              alt="Newton y la gravedad"
+            />
+            <h2>Newton y la gravedad</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>Newton y la gravedad</h2>
+            <p>
+              Isaac Newton formuló la Ley de Gravitación Universal tras observar
+              cómo caían los objetos en la Tierra y relacionarlo con el
+              movimiento de la Luna. Postuló que la fuerza de atraccón es directamente proporcional a las masas e inversamente proporcional a la distancia. Es decir, cuanto mayores sean las masas, mayor será la atracción. Pero cuanto más lejos estén, menor será la atracción.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 6. La gravedad de los planetas -->
+      <section id="la-gravedad-de-los-planetas" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-5" class="check-tarjeta" />
+        <label for="galeria-5" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1033/400/300"
+              alt="La gravedad de los planetas"
+            />
+            <h2>La gravedad de los planetas</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>La gravedad de los planetas</h2>
+            <p>
+              Cada planeta tiene una gravedad distinta. Para expresar la gravedad se usa como cambia la velocidad de un objeto a medida que cae en ese planeta. Por ejemplo, en la Tierra, el valor promedio de la aceleración de la gravedad es 9.81 m/seg2. Esto significa que al caer un objeto, por cada segundo que pasa, la velocidad aumenta en 9.81 m/seg, unos 35km/h.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 7. Baja gravedad -->
+      <section
+        id="tenelo-en-cuenta-si-caminas-en-baja-gravedad"
+        class="tarjeta-galeria"
+      >
+        <input type="checkbox" id="galeria-6" class="check-tarjeta" />
+        <label for="galeria-6" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1002/400/300"
+              alt="Caminar en baja gravedad"
+            />
+            <h2>Caminar en baja gravedad</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>Caminar en baja gravedad</h2>
+            <p>
+              Al caminar en baja gravedad los movimientos requieren de poco esfuerzo, claro, uno se siente mas liviano. Pero hay algo que no cambia, el esfuerzo que se debe hacer para frenar. Recuerda que la inercia no cambia pues depende de la masa. Por eso los astronautas deben calcular varios pasos antes donde quieren frenar para no pasarse de largo. 
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 8. Einstein y la gravedad -->
+      <section id="einstein-y-la-gravedad" class="tarjeta-galeria">
+        <input type="checkbox" id="galeria-7" class="check-tarjeta" />
+        <label for="galeria-7" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1050/400/300"
+              alt="Einstein y la gravedad"
+            />
+            <h2>Einstein y la gravedad</h2>
+            <span class="pista-click">Toca para descubrir</span>
+          </div>
+          <div class="vista-texto">
+            <h2>Einstein y la gravedad</h2>
+            <p>
+              Albert Einstein redefinió la gravedad con la Teoría de la Relatividad General. Para él, la gravedad no es una fuerza invisible de atracción entre objetos sino la consecuencia directa de cómo la masa y la energía deforman el tejido del espacio-tiempo. Un objeto con masa o energía (como el Sol o la Tierra) se hunda en el espacio-tiempo como una bola de boliche sobre un colchón o una tela elástica tensa. Cuanta más concentración de masa exista, mayor será el "pozo" o la deformación que genera. 
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+
+      <!-- 9. Cuestionario -->
+      <section
+        id="demuestra-tus-conocimientos"
+        class="tarjeta-galeria cta-card"
+      >
+        <input type="checkbox" id="galeria-8" class="check-tarjeta" />
+        <label for="galeria-8" class="contenido-tarjeta">
+          <div class="vista-imagen">
+            <img
+              src="https://picsum.photos/id/1074/400/300"
+              alt="Demuestra tus conocimientos"
+            />
+            <h2>Demuestra tus conocimientos</h2>
+            <span class="pista-click">Toca para iniciar</span>
+          </div>
+          <div class="vista-texto">
+            <h2>Demuestra tus conocimientos</h2>
+            <p>
+              ¡Ponte a prueba! Responde las preguntas para comprobar todo lo que
+              has aprendido sobre la fuerza que mantiene a nuestro universo
+              unido.
+            </p>
+            <span class="pista-volver">Toca para volver</span>
+          </div>
+        </label>
+      </section>
+    </main>
+  </body>
+</html>

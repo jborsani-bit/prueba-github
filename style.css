@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Tu paleta de colores */
+:root {
+  --bg-main: #f4f6f9;
+  --primary: #5b82a6;
+  --secondary: #e8a598;
+  --accent-mint: #88b2a5;
+  --accent-amber: #edc988;
+  --text-dark: #2b303a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: "Poppins", system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* --- HEADER CON ICONO Y CARRUSEL --- */
+.header-carrusel {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(43, 48, 58, 0.08);
+  border-bottom: 4px solid var(--primary);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icono {
+  width: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+/* Carrusel horizontal deslizable */
+.carrusel-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding-bottom: 4px;
+  /* Estilo discreto de barra de desplazamiento */
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+}
+
+.carrusel-nav::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carrusel-nav::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+.carrusel-lista {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.carrusel-lista li a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary);
+  transition: all 0.25s ease-in-out;
+}
+
+.carrusel-lista li a:hover {
+  background-color: var(--accent-amber);
+  color: var(--text-dark);
+  border-color: var(--accent-amber);
+  transform: translateY(-2px);
+}
+
+.carrusel-lista li:last-child a {
+  background-color: var(--accent-mint);
+  color: #ffffff;
+  border-color: var(--accent-mint);
+  font-weight: 700;
+}
+
+.carrusel-lista li:last-child a:hover {
+  background-color: var(--accent-amber);
+  color: var(--text-dark);
+  border-color: var(--accent-amber);
+}
+
+/* --- SECCIÓN HERO (TEXTO ARRIBA / VIDEO ABAJO) --- */
+.hero-section {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem auto;
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente (texto arriba, video abajo) */
+  align-items: center;
+  text-align: center; /* Centra el texto superior para mejor impacto visual */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(43, 48, 58, 0.08);
+  border-left: 5px solid var(--primary);
+}
+
+.hero-texto {
+  max-width: 800px; /* Limita el ancho del texto para facilitar la lectura */
+  margin-bottom: 25px; /* Espacio entre el texto y el video */
+}
+
+.hero-texto h1 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.hero-texto p {
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-video {
+  width: 100%;
+  max-width: 850px; /* Mantiene un tamaño proporcionado para el video */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(43, 48, 58, 0.12);
+  background-color: #000000;
+}
+
+.hero-video video {
+  width: 100%;
+  max-height: 400px; /* Altura equilibrada para portadas completas */
+  object-fit: cover;
+  display: block;
+}
+/* --- MODO GALERÍA (GRID) --- */
+.galeria-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Ocultar checkbox */
+.check-tarjeta {
+  display: none;
+}
+
+/* Estructura de la tarjeta */
+.tarjeta-galeria {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(43, 48, 58, 0.08);
+  border-top: 5px solid var(--primary);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  height: 320px; /* Tamaño fijo para consistencia */
+}
+
+.tarjeta-galeria:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(43, 48, 58, 0.15);
+}
+
+.tarjeta-galeria.cta-card {
+  border-top-color: var(--accent-mint);
+}
+
+.contenido-tarjeta {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+/* --- VISTA DE IMAGEN (INICIAL) --- */
+.vista-imagen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.vista-imagen img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.vista-imagen h2 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  line-height: 1.3;
+}
+
+.pista-click {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: right;
+}
+
+/* --- VISTA DE TEXTO (OCULTA INICIALMENTE) --- */
+.vista-texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-main);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border-radius: 14px;
+}
+
+.vista-texto h2 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.vista-texto p {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.pista-volver {
+  margin-top: auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-mint);
+  text-align: right;
+}
+
+/* --- REEMPLAZO AL ACTIVAR CLICK --- */
+.check-tarjeta:checked + .contenido-tarjeta .vista-imagen {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.check-tarjeta:checked + .contenido-tarjeta .vista-texto {
+  opacity: 1;
+  pointer-events: auto;
+}
